@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Web Design &#8211; Tech Solutions</title>
+	<atom:link href="http://localhost/portfolio/category/web-design/feed/" rel="self" type="application/rss+xml" />
+	<link>http://localhost/portfolio</link>
+	<description>A Technology Solution For Your Problems</description>
+	<lastBuildDate>Tue, 21 Jan 2020 17:14:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>http://localhost/portfolio/wp-content/uploads/2020/01/cropped-Untitled-2-1-32x32.png</url>
+	<title>Web Design &#8211; Tech Solutions</title>
+	<link>http://localhost/portfolio</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Facebook speeds up AI training by culling the weak</title>
+		<link>http://localhost/portfolio/workflow-generator/</link>
+				<comments>http://localhost/portfolio/workflow-generator/#respond</comments>
+				<pubDate>Sun, 06 Jan 2019 11:46:34 +0000</pubDate>
+		<dc:creator><![CDATA[fahad123]]></dc:creator>
+				<category><![CDATA[Web Design]]></category>
+
+		<guid isPermaLink="false">http://demo.acmethemes.com/portfolio-web/?p=105</guid>
+				<description><![CDATA[Training an artificial intelligence agent to do something like navigate a complex 3D world is computationally expensive and time-consuming. In order to better create these potentially useful systems, Facebook  engineers derived huge efficiency benefits from, essentially, leaving the slowest of the pack behind. It’s part of the company’s new focus on “embodied AI,” meaning machine learning systems [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p id="speakable-summary">Training an artificial intelligence agent to do something like navigate a complex 3D world is computationally expensive and time-consuming. In order to better create these potentially useful systems, <a class="crunchbase-link" href="https://crunchbase.com/organization/facebook" target="_blank" rel="noopener noreferrer" data-type="organization" data-entity="facebook">Facebook </a> engineers derived huge efficiency benefits from, essentially, leaving the slowest of the pack behind.</p>
+<p>It’s part of the company’s new focus on “embodied AI,” meaning machine learning systems that interact intelligently with their surroundings. That could mean lots of things — responding to a voice command using conversational context, for instance, but also more subtle things like a robot knowing it has entered the wrong room of a house. Exactly why Facebook is so interested in that I’ll leave to your own speculation, but the fact is they’ve recruited and funded serious researchers to look into this and related domains of AI work.</p>
+<p>To create such “embodied” systems, you need to train them using a reasonable facsimile of the real world. One can’t expect an AI that’s never seen an actual hallway to know what walls and doors are. And given how slow real robots actually move in real life you can’t expect them to learn their lessons here. That’s what <a href="https://techcrunch.com/2019/06/14/facebook-is-creating-photorealistic-homes-for-ais-to-work-and-learn-in/">led Facebook to create Habitat</a>, a set of simulated real-world environments meant to be photorealistic enough that what an AI learns by navigating them could also be applied to the real world.</p>
+<div class="embed breakout">
+<p><iframe class="wp-embedded-content" title="“Facebook is creating photorealistic homes for AIs to work and learn in” — TechCrunch" src="https://techcrunch.com/2019/06/14/facebook-is-creating-photorealistic-homes-for-ais-to-work-and-learn-in/embed/#?secret=SqZqvwddHp" width="800" height="285" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" sandbox="allow-scripts" data-secret="SqZqvwddHp" data-mce-fragment="1"></iframe></p>
+</div>
+<p>Such simulators, which are common in robotics and AI training, are also useful because, being simulators, you can run many instances of them at the same time — for simple ones, thousands simultaneously, each one with an agent in it attempting to solve a problem and eventually reporting back its findings to the central system that dispatched it.</p>
+<p>Unfortunately, photorealistic 3D environments use a lot of computation compared to simpler virtual ones, meaning that researchers are limited to a handful of simultaneous instances, slowing learning to a comparative crawl.</p>
+<p>The Facebook researchers, led by Dhruv Batra and Eric Wijmans, the former a professor and the latter a PhD student at Georgia Tech, found a way to speed up this process by an order of magnitude or more. And the result is an AI system that can navigate a 3D environment from a starting point to goal with a 99.9 percent success rate and few mistakes.</p>
+<div class="wp-video"><video id="video-1934783-1" class="wp-video-shortcode" preload="metadata" controls="controls" width="2528" height="1152" data-mce-fragment="1"></video></div>
+<p>Simple navigation is foundational to a working “embodied AI” or robot, which is why the team chose to pursue it without adding any extra difficulties.</p>
+<p>“It’s the first task. Forget the question answering, forget the context — can you just get from point A to point B? When the agent has a map this is easy, but with no map it’s an open problem,” said Batra. “Failing at navigation means whatever stack is built on top of it is going to come tumbling down.”</p>
+<p>The problem, they found, was that the training systems were spending too much time waiting on slowpokes. Perhaps it’s unfair to call them that — these are AI agents that for whatever reason are simply unable to complete their task quickly.</p>
+<p>“It’s not necessarily that they’re learning <em>slowly</em>,” explained Wijmans. “But if you’re simulating navigating a one bedroom apartment, it’s much easier to do that than navigate a ten bedroom mansion.”</p>
+<p>The central system is designed to wait for all its dispatched agents to complete their virtual tasks and report back. If a single agent takes 10 times longer than the rest, that means there’s a huge amount of wasted time while the system sits around waiting so it can update its information and send out a new batch.</p>
+]]></content:encoded>
+							<wfw:commentRss>http://localhost/portfolio/workflow-generator/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>
